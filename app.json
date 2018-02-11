@@ -1,0 +1,122 @@
+{
+  "name": "cgm-remote-monitor",
+  "description": "kirill-natalchenko",
+  "scripts": {
+  },
+  "env": {
+    "ALARM_HIGH": {
+      "required": true
+    },
+    "ALARM_LOW": {
+      "required": true
+    },
+    "ALARM_TIMEAGO_URGENT": {
+      "required": true
+    },
+    "ALARM_TIMEAGO_URGENT_MINS": {
+      "required": true
+    },
+    "ALARM_TIMEAGO_WARN": {
+      "required": true
+    },
+    "ALARM_TIMEAGO_WARN_MINS": {
+      "required": true
+    },
+    "ALARM_TYPES": {
+      "required": true
+    },
+    "ALARM_URGENT_HIGH": {
+      "required": true
+    },
+    "ALARM_URGENT_LOW": {
+      "required": true
+    },
+    "API_SECRET": {
+      "required": true
+    },
+    "BG_HIGH": {
+      "required": true
+    },
+    "BG_LOW": {
+      "required": true
+    },
+    "BG_TARGET_BOTTOM": {
+      "required": true
+    },
+    "BG_TARGET_TOP": {
+      "required": true
+    },
+    "BRIDGE_PASSWORD": {
+      "required": true
+    },
+    "BRIDGE_USER_NAME": {
+      "required": true
+    },
+    "CUSTOM_TITLE": {
+      "required": true
+    },
+    "DISABLE": {
+      "required": true
+    },
+    "DISPLAY_UNITS": {
+      "required": true
+    },
+    "ENABLE": {
+      "required": true
+    },
+    "LANGUAGE": {
+      "required": true
+    },
+    "MAKER_ANNOUNCEMENT_KEY": {
+      "required": true
+    },
+    "MAKER_KEY": {
+      "required": true
+    },
+    "MONGO_COLLECTION": {
+      "required": true
+    },
+    "MONGODB_URI": {
+      "required": true
+    },
+    "NIGHT_MODE": {
+      "required": true
+    },
+    "PAPERTRAIL_API_TOKEN": {
+      "required": true
+    },
+    "PUSHOVER_ANNOUNCEMENT_KEY": {
+      "required": true
+    },
+    "PUSHOVER_API_TOKEN": {
+      "required": true
+    },
+    "PUSHOVER_USER_KEY": {
+      "required": true
+    },
+    "SHOW_RAWBG": {
+      "required": true
+    },
+    "THEME": {
+      "required": true
+    },
+    "TIME_FORMAT": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "mongolab",
+    "mongolab",
+    "papertrail"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
